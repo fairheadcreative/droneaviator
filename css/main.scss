@@ -54,7 +54,8 @@ body {
   position: relative;
   height: 238px;
   margin-top: 60px;
-  @include media (max-width $small-screen){
+  
+  @include media (max-width $large-screen){
     margin-top: 0;
   }
 }
