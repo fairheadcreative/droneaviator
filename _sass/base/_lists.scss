@@ -1,0 +1,19 @@
+ul,
+ol {
+  margin: 0;
+  padding-left: $block-padding;
+  margin: 0 0 $base-spacing;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
