@@ -20,12 +20,12 @@ h6 {
 //coming soon page
 
 h1 {
-  font-size: 1.9em;
+  font-size: $base-font-size*1.9;
   margin-bottom: -.25em;
 }
 
 p {
-  font-size: 1.25em;
+  font-size: $base-font-size;
   padding: 0 1.5em;
   line-height: 1.4;
   

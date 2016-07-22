@@ -1,5 +1,5 @@
 title: Drone Aviator
-baseurl: /droneaviator
+baseurl: /
 permalink: /:title/
 destination: droneaviator
 markdown: kramdown

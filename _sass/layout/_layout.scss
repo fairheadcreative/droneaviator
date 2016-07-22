@@ -1,3 +1,25 @@
 @import
 		"guide"
 ;
+
+.footer { 
+  color: $teal;
+}
+
+//helper classes
+
+.block-mobile {
+  display: block;
+  
+  @include media ($medium-screen){
+    display: none;
+  }
+}
+
+.block-desktop {
+  display: none;
+  
+  @include media ($medium-screen){
+    display: block;
+  }
+}
