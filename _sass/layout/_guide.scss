@@ -1,0 +1,25 @@
+.guide { 
+  background: $white;
+  color: $dark-gray; 
+}
+
+.header-guide { 
+  @include outer-container();
+  background: $blue;
+  position: relative;
+  padding-bottom: 70px;
+  
+  .speech-top {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.content-guide {
+  text-align: left;
+}
