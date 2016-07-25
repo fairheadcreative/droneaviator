@@ -2,11 +2,58 @@
 		"guide"
 ;
 
+html {
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  color: $white;
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(60,142,215);
+  background: -moz-linear-gradient(top, rgba(60,142,215,1) 0%, rgba(131,232,214,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(60,142,215,1) 0%,rgba(131,232,214,1) 100%);
+  background: linear-gradient(to bottom, rgba(60,142,215,1) 0%,rgba(131,232,214,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3c8ed7', endColorstr='#83e8d6',GradientType=0 );
+  background-repeat: no-repeat;
+}
+
+.page-container {
+  @include outer-container();
+  max-width: $medium-screen;
+  padding: 0 $base-spacing;
+  
+  .content-guide & {
+    padding: ($base-spacing/3)*2 $base-spacing;
+  }
+}
+
+.drone-container {
+  position: relative;
+  height: 238px;
+  margin-top: 60px;
+  
+  @include media (max-width $large-screen){
+    margin-top: 0;
+  }
+}
+
 .footer { 
   color: $teal;
+  font-size: $base-font-size*.75;
+  margin-top: 3.75em;
 }
 
 //helper classes
+
+.txt-right { text-align: right; }
+.txt-blue { color: $blue; }
+
+.break-mobile {
+    @include media ($medium-screen){
+    display: none;
+  }
+}
 
 .block-mobile {
   display: block;
@@ -21,5 +68,13 @@
   
   @include media ($medium-screen){
     display: block;
+  }
+  
+  &.form-desktop + div {
+    display: none;
+  
+    @include media ($medium-screen){
+      display: block;
+    }
   }
 }

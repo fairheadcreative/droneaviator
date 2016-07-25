@@ -43,7 +43,7 @@ select[multiple] {
 
   &:focus {
     border-color: $action-color;
-    box-shadow: $form-box-shadow-focus;
+    //box-shadow: $form-box-shadow-focus;
     outline: none;
   }
 
@@ -94,6 +94,10 @@ select {
 }
 
 //desktop send sms form
+.form-desktop {
+  margin-top: 1.75em;
+}
+
 .form-desktop + div {
   position: relative;
 
@@ -112,7 +116,7 @@ select {
     top: 0;
     width: 70% !important;
     border-radius: 50px 0 0 50px !important;
-    padding: .97em 1.25em !important;
+    padding: .9em 1.25em !important;
   }
   
   .body-div {
@@ -124,7 +128,12 @@ select {
     }
     
     .confMessage {
-      margin-top: 50px !important;
+      margin-top: 40px !important;
+      
+      span {
+        color: $white !important;
+      }
+      
     }
   }
   
