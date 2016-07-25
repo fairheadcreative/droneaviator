@@ -20,7 +20,6 @@ body {
 
 .page-container {
   @include outer-container();
-  max-width: $medium-screen;
   padding: 0 $base-spacing;
   
   .content-guide & {
@@ -42,6 +41,17 @@ body {
   color: $teal;
   font-size: $base-font-size*.75;
   margin-top: 3.75em;
+  
+  @include media ($medium-screen){
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    p {
+      font-size: 1.15em;
+    }
+  }
 }
 
 //helper classes
@@ -75,6 +85,8 @@ body {
   
     @include media ($medium-screen){
       display: block;
+      max-width: 520px;
+      margin: 0 auto;
     }
   }
 }
