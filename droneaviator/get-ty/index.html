@@ -1,14 +1,17 @@
-<head>
+<!DOCTYPE html>
+<html>
+
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>Drone Aviator</title>
+  <meta name="description" content="">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ "/css/main.css" }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="//get-ty/">
+  <link rel="alternate" type="application/rss+xml" title="Drone Aviator" href="//feed.xml">
   
   <script src="js/jquery-2.x-git.min.js"></script>
   <script>
@@ -30,3 +33,30 @@
     ga('send', 'pageview');
   </script>
 </head>
+
+
+  <body class="guide">
+
+    <section class="header-guide">
+ <div class="page-container">
+    <div class="char-container jarvis-hopin">
+      <img class="hopin-2" src="/images/jarvis.gif">
+    </div>
+    <img src="/images/speech-top.svg" alt="" class="speech-top">
+  </div>  
+</section>
+
+<section class="content-guide">
+ <div class="page-container">
+  <p class="push-down">Alright sweet! Enjoy the guide, man.</p>
+  <p class="txt-right buttons-textual">
+    <a href="/docs/DAA_top_10_reasons.pdf" class="button button-play">Download guide</a>
+  </p>  
+ </div>
+</section>
+
+
+  <script src="js/script.js"></script>
+  </body>
+
+</html>
