@@ -29,8 +29,7 @@ body {
 
 .drone-container {
   position: relative;
-  height: 238px;
-  margin-top: 60px;
+  height: 230px;
   
   @include media (max-width $large-screen){
     margin-top: 0;
@@ -44,12 +43,10 @@ body {
   
   @include media ($medium-screen){
     font-style: italic;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: 3em;
     
     p {
-      font-size: 1.15em;
+      font-size: 1.1em;
     }
   }
 }
@@ -85,7 +82,7 @@ body {
   
     @include media ($medium-screen){
       display: block;
-      max-width: 520px;
+      max-width: 390px;
       margin: 0 auto;
     }
   }
