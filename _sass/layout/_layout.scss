@@ -25,6 +25,10 @@ body {
   .content-guide & {
     padding: ($base-spacing/3)*2 $base-spacing;
   }
+  
+  .guide & {
+    max-width: em(600);
+  }
 }
 
 .drone-container {
