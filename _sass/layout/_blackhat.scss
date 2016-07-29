@@ -1,0 +1,39 @@
+.blackhat { 
+  background: #000 url(../../images/blackhat-background-tight.jpg) no-repeat center top -52px;
+  
+  .logotype {
+    margin-top: 40px;
+    margin-bottom: 37px;
+  }
+  
+  h1 {
+    font-size: 1.7em;
+    letter-spacing: -0.5px;
+    line-height: 1.25;
+    margin-bottom: 0.55em;
+  }
+  
+  p {
+    font-size: .95em;
+    line-height: 1.5;
+  }
+  
+  .form-desktop {
+    margin-top: 1.5em;
+  }
+  
+  .txt-small {
+    font-size: 0.8em;
+    letter-spacing: 0.05px;
+    line-height: 1.7;
+    padding: 0.6em $base-spacing;
+    
+    @include media($medium-screen) {
+      padding: 0.6em 3.5em;
+    }
+  }
+  
+  .page-container {
+    max-width: $medium-screen;
+  }
+}
