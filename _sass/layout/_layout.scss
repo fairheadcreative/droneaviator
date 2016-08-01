@@ -19,6 +19,14 @@ body {
   background-repeat: no-repeat;
 }
 
+a {
+  color: $teal;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .page-container {
   @include outer-container();
   padding: 0 $base-spacing;
@@ -47,12 +55,21 @@ body {
   margin-top: 3.75em;
   
   @include media ($medium-screen){
-    font-style: italic;
+    //font-style: italic;
     margin-top: 3em;
     
     p {
       font-size: 1.1em;
     }
+  }
+  
+  &.footer-outlined {
+    border: 1px solid rgba(0,126,132,.5);
+    border-radius: 7px;
+    background: rgba(0,126,132,.2);
+    max-width: 650px;
+    margin-bottom: $base-spacing*2;
+    padding: $small-spacing $base-spacing 0;
   }
 }
 
@@ -60,6 +77,7 @@ body {
 
 .txt-right { text-align: right; }
 .txt-blue { color: $blue; }
+.caps { text-transform: uppercase; }
 
 .break-mobile {
     @include media ($medium-screen){
