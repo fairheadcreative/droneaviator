@@ -75,9 +75,18 @@ a {
     border: 1px solid rgba(0,126,132,.5);
     border-radius: 7px;
     background: rgba(0,126,132,.15);
-    max-width: 650px;
-    margin-bottom: $base-spacing*2;
+    max-width: 780px;
+    margin: $base-spacing*2 auto;
     padding: $small-spacing $base-spacing 0;
+    text-align: left;
+    
+    @include media (max-width em(820)){
+    margin: $base-spacing*2 $base-spacing;
+    }
+    
+    @include media (max-width em(650)){
+      text-align: center;
+    }
   }
 }
 
@@ -87,6 +96,24 @@ a {
 .txt-blue { color: $blue; }
 .txt-teal { color: $teal; }
 .caps { text-transform: uppercase; }
+.image-left {
+  float: left;
+  margin-right: $small-spacing;
+  
+  .home & {
+    max-width: 118px;
+    image-rendering: optimizequality;
+    @include media (max-width em(650)){
+      float: none;
+      display: block;
+      left: 50%;
+      margin-bottom: 0.75em;
+      position: relative;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+  }
+}
 
 .break-mobile {
     @include media ($medium-screen){
