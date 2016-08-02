@@ -101,6 +101,10 @@ select {
 //desktop send sms form
 .form-desktop {
   margin-top: 1.75em;
+  
+  .done & {
+    margin-top: $base-spacing;
+  }
 }
 
 .form-desktop + div {
@@ -162,4 +166,8 @@ select {
 }
 #SubmitElement_0_input {
   box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+#scPortableForm-118293 + p:not(.txt-teal) {
+  display: none;
 }

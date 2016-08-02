@@ -24,6 +24,11 @@ h1 {
     font-size: $base-font-size*1.95;
     margin-bottom: .5em;
   }
+  
+  .done & { 
+    letter-spacing: -1px;
+    margin-bottom: .35em;
+  }
 }
 
 p {
@@ -45,6 +50,8 @@ strong { font-weight: 600; }
   font-weight: 300;
   font-size: 1.25em;
   margin-bottom: .8em;
+  
+  .done & { letter-spacing: -.2px; }
 }
 
 .txt-small {

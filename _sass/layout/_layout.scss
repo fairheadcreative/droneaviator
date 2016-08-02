@@ -49,6 +49,14 @@ a {
   }
 }
 
+.head-img-container {
+  .img-done {
+    margin-bottom: 15px;
+    margin-top: 80px;
+    max-width: 120px;
+  }
+}
+
 .footer { 
   color: $teal;
   font-size: $base-font-size*.75;
@@ -77,10 +85,17 @@ a {
 
 .txt-right { text-align: right; }
 .txt-blue { color: $blue; }
+.txt-teal { color: $teal; }
 .caps { text-transform: uppercase; }
 
 .break-mobile {
     @include media ($medium-screen){
+    display: none;
+  }
+}
+
+.break-desktop {
+    @include media (max-width $medium-screen){
     display: none;
   }
 }
@@ -111,8 +126,17 @@ a {
   }
 }
 
+//page-specific
+
 .form-blackhat + div {
-      display: block;
-      max-width: 390px;
-      margin: 0 auto;
+  display: block;
+  max-width: 390px;
+  margin: 0 auto;
+}
+
+.done {
+  .txt-teal.txt-small {
+    margin-top: -1em;
+    font-size: .8em;
   }
+}
